@@ -1,5 +1,5 @@
-#ifndef WINDOW_WINDOW_HPP
-#define WINDOW_WINDOW_HPP
+#ifndef ENGINE_WINDOW_WINDOW_HPP
+#define ENGINE_WINDOW_WINDOW_HPP
 
 #include <SFML/Graphics.hpp>
 #include <iostream>
