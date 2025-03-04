@@ -1,0 +1,22 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-I./include/",
+      "./src//main.cpp"
+    ],
+    "directory": "/home/pablo/balatro",
+    "file": "/home/pablo/balatro/src/main.cpp"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-I./include/",
+      "./src//window.cpp"
+    ],
+    "directory": "/home/pablo/balatro",
+    "file": "/home/pablo/balatro/src/window.cpp"
+  }
+]
