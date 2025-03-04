@@ -1,5 +1,5 @@
 #include <SFML/Graphics.hpp>
-#include <window.hpp>
+#include <engine/window.hpp>
 
 Window::Display window;
 
