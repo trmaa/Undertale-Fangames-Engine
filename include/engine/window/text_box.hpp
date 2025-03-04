@@ -1,11 +1,10 @@
 #ifndef WINDOW_TEXT_BOX_HPP
 #define WINDOW_TEXT_BOX_HPP
 
-#include "SFML/System/Vector2.hpp"
 #include <SFML/Graphics.hpp>
 #include <string>
 
-namespace Window //all the file
+namespace Engine //all the file
 {
 
 class Text_box {

@@ -1,5 +1,5 @@
 #include <engine/window.hpp>
 
-Window::Display display;
+Engine::Window display;
 
-Window::Display &window() { return display; }
+Engine::Window &Engine::window() { return display; }

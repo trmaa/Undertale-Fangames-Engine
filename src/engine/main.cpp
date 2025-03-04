@@ -5,17 +5,17 @@
 void loop() {
     game::loop();
 
-    window().render();
+    Engine::window().render();
 }
 
 int main() {
     game::start();
 
-    while (window().isOpen()) {
+    while (Engine::window().isOpen()) {
         sf::Event event;
-        while (window().pollEvent(event)) {
+        while (Engine::window().pollEvent(event)) {
             if (event.type == sf::Event::Closed) {
-                window().close();
+                Engine::window().close();
             }
         }
 

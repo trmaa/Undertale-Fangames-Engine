@@ -4,6 +4,11 @@
 #include <engine/window/window.hpp>
 #include <engine/window/text_box.hpp>
 
-Window::Display& window();
+namespace Engine
+{
+
+Engine::Window& window();
+
+}
 
 #endif

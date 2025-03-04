@@ -5,10 +5,10 @@
 #include <iostream>
 #include <vector>
 
-namespace Window
+namespace Engine
 {
 
-class Display : public sf::RenderWindow {
+class Window : public sf::RenderWindow {
 private:
     std::vector<sf::Sprite> m_drawables;
     std::vector<sf::Texture> m_normalmaps;
@@ -18,7 +18,7 @@ private:
     void m_toggle_fullscreen(); //to do
 
 public:
-    Display() {
+    Window() {
         this->create(sf::VideoMode(800, 600), "alicia_roguelike", sf::Style::Fullscreen);
 
         if (!this->m_lighting.loadFromFile("shaders/lighting.fsh", sf::Shader::Fragment)) {
@@ -39,7 +39,7 @@ public:
         this->display();
     }
 
-    void drawable_add(int z_index, sf::Sprite spr) {
+    void drawable_add(int z_index, sf::Sprite spr) { //to be implemented z_index
         this->m_drawables.push_back(spr);
         this->m_normalmaps.push_back(*spr.getTexture());
     }
