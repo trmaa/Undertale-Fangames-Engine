@@ -11,6 +11,7 @@ void loop() {
 int main() {
     game::start();
 
+    sf::Clock clock;
     while (Engine::window().isOpen()) {
         sf::Event event;
         while (Engine::window().pollEvent(event)) {
@@ -18,6 +19,7 @@ int main() {
                 Engine::window().close();
             }
         }
+        Engine::delta_time() = clock.restart().asSeconds();
 
         loop();
     }

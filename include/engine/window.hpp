@@ -7,6 +7,7 @@
 namespace Engine
 {
 
+float& delta_time();
 Engine::Window& window();
 
 }

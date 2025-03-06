@@ -52,7 +52,7 @@ private:
     }
 
 public:
-    const sf::Sprite &get_sprite() const { return this->m_sprite; }
+    sf::Sprite *get_sprite() { return &this->m_sprite; }
 
     Text_box(std::string text, int f_size, sf::Vector2f pos, sf::Vector2f size) {
         this->m_font_load();
